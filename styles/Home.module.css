@@ -17,7 +17,7 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  padding: 5rem 2rem;
 }
 .pre {
   overflow-x: auto;
@@ -40,6 +40,7 @@
 }
 .article {
   max-width: 750px;
+  line-height: 30px;
 }
 .footer {
   width: 100%;
@@ -60,14 +61,14 @@
   align-items: center;
 }
 
-.title a {
+.link {
   color: #0070f3;
   text-decoration: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.link:hover,
+.link a:focus,
+.link a:active {
   text-decoration: underline;
 }
 
@@ -80,6 +81,9 @@
 .post {
   font-size: 2rem;
   color: #543dc9;
+}
+.author {
+  font-size: 0.8rem;
 }
 
 .title,
