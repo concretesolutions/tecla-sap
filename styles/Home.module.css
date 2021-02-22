@@ -1,3 +1,12 @@
+.header {
+  background: #4e7cfc;
+  width: 100%;
+  height: 240px;
+  position: absolute;
+}
+.logo {
+  border-radius: 33% 67% 29% 71% / 59% 30% 70% 41%;
+}
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -15,7 +24,23 @@
   justify-content: center;
   align-items: center;
 }
-
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+.pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.article {
+  max-width: 750px;
+}
 .footer {
   width: 100%;
   height: 100px;
@@ -50,6 +75,11 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: #543dc9;
+}
+.post {
+  font-size: 2rem;
+  color: #543dc9;
 }
 
 .title,
@@ -95,8 +125,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #543dc9;
+  border-color: #543dc9;
 }
 
 .card h3 {
