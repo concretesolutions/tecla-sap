@@ -36,6 +36,14 @@ export default function Home() {
                 17 dicas de otimização de Javascript para conhecer em 2021
               </a>
             </Link>
+            <Link href="/posts/lazy-loading-nativo-de-imagens-sem-javascript">
+              <a
+                className={styles.card}
+                title="Lazy-loading nativo de imagens sem Javascript"
+              >
+                Lazy-loading nativo de imagens (sem Javascript)
+              </a>
+            </Link>
           </div>
         </main>
         <footer className={styles.footer}>Tecla SAP - 2021</footer>
