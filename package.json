@@ -1,7 +1,7 @@
 {
   "name": "tecla-sap",
   "private": true,
-  "homepage": "https://teclasap.github.io",
+  "homepage": "https://concretesolutions.github.io/tecla-sap",
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
