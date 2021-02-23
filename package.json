@@ -1,11 +1,10 @@
 {
   "name": "tecla-sap",
-  "homepage": "https://concretesolutions.github.io/tecla-sap",
+  "homepage": "https://teclasap.github.io",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "./node_modules/.bin/eslint src --max-warnings=0",
     "test": "jest",
