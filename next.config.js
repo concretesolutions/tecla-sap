@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = withPWA({
   // Use the CDN in production and localhost for development.
-  assetPrefix: isProd ? 'https://cdn.statically.io/gh/NaveenDA/naveenda.github.io/gh-pages/' : '',
+  assetPrefix: isProd ? 'https://cdn.statically.io/gh/concretesolutions/teclasap.github.io/gh-pages/' : '',
   pwa: {
     dest: 'public'
   }
