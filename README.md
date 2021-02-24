@@ -1,6 +1,6 @@
 ![Logo do projeto](./public/logo_low.png)
 
-# Tecla SAP
+# Tecla SAP https://github.com/concretesolutions/tecla-sap/actions/workflows/integrate.yml/badge.svg
 
 > Uma coletânea de artigos traduzidos para PT-BR para ampliar o alcance de artigos técnicos e conhecimento relevante, publicados originalmente em inglês.
 
