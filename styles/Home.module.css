@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 5rem 0;
 }
 .pre {
   overflow-x: auto;
@@ -41,7 +41,15 @@
 .article {
   max-width: 750px;
   line-height: 30px;
+  padding: 1rem 2rem;
 }
+
+@media (max-width: 750px) {
+  .article {
+    max-width: 100vw;
+  }
+}
+
 .footer {
   width: 100%;
   height: 100px;
