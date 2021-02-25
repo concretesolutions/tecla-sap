@@ -55,7 +55,8 @@ export default function TipsJavascriptOptimization() {
             </p>
             <h2>1. If com várias condições</h2>
             <p>
-              Podemos armazenar valores em um array e podemos usar o método <code><b>includes</b></code> para fazer a verificação da condição:
+              Podemos armazenar valores em um array e podemos usar o método{' '}
+              <code>includes</code> para fazer a verificação da condição:
             </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
@@ -73,8 +74,9 @@ export default function TipsJavascriptOptimization() {
             </pre>
             <h2>2. If...else abreviado</h2>
             <p>
-              Este é um atalho para quando temos condições <code><b>if-else</b></code> que não contêm lógicas extensas. 
-              Podemos usar os operadores ternários para simplificar.
+              Este é um atalho para quando temos condições <code>if-else</code>{' '}
+              que não contêm lógicas extensas. Podemos usar os operadores
+              ternários para simplificar.
             </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
@@ -96,9 +98,7 @@ export default function TipsJavascriptOptimization() {
                 `}
               </Highlight>
             </pre>
-            <p>
-              É possível também aninhar a condição:
-            </p>
+            <p>É possível também aninhar a condição:</p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -110,7 +110,8 @@ export default function TipsJavascriptOptimization() {
             </pre>
             <h2>3.Checagem de null, undefined, e variáveis vazias</h2>
             <p>
-              Quando criamos novas variáveis, às vezes queremos verificar se seu valor não é <code><b>null</b></code> ou <code><b>undefined</b></code>. 
+              Quando criamos novas variáveis, às vezes queremos verificar se seu
+              valor não é <code>null</code> ou <code>undefined</code>.
               JavaScript tem um atalho muito bom para realizar essas funções.
             </p>
             <pre className={styles.pre}>
@@ -127,7 +128,8 @@ export default function TipsJavascriptOptimization() {
             </pre>
             <h2>4.Verificações de valor nulo e atribuição de valor padrão</h2>
             <p>
-              Formatos breves para estabelecer um valor designado em caso de <code><b>null</b></code>
+              Formatos breves para estabelecer um valor designado em caso de{' '}
+              <code>null</code>
             </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
@@ -138,7 +140,9 @@ export default function TipsJavascriptOptimization() {
                 `}
               </Highlight>
             </pre>
-            <h2>5.Verificações de valor undefined e atribuição de um valor padrão</h2>
+            <h2>
+              5.Verificações de valor undefined e atribuição de um valor padrão
+            </h2>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -162,7 +166,10 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>7. Retornos de comparação</h2>
-            <p>Usar a comparação na instrução de retorno evitará 5 linhas de código e as reduzirá para 1 linha.</p>
+            <p>
+              Usar a comparação na instrução de retorno evitará 5 linhas de
+              código e as reduzirá para 1 linha.
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -190,7 +197,10 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>8. Chamada de função curta</h2>
-            <p>Podemos alcançar esses tipos de funções usando o operador ternário.</p>
+            <p>
+              Podemos alcançar esses tipos de funções usando o operador
+              ternário.
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -214,7 +224,10 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>9. Forma breve de usar Switch</h2>
-            <p>Podemos salvar as condições nos objetos de valor-chave e podem ser usados com base nas condições.</p>
+            <p>
+              Podemos salvar as condições nos objetos de valor-chave e podem ser
+              usados com base nas condições.
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -246,7 +259,10 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>10. Abreviação de string multi-linha</h2>
-            <p>Quando estamos lidando com uma string de várias linhas no código, podemos fazer isso da seguinte maneira:</p>
+            <p>
+              Quando estamos lidando com uma string de várias linhas no código,
+              podemos fazer isso da seguinte maneira:
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -264,7 +280,10 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>11. Formato breve de retorno implícito</h2>
-            <p>Com o uso das <code><b>arrow functions</b></code>, podemos retornar o valor diretamente, sem precisar escrever uma instrução de retorno.</p>
+            <p>
+              Com o uso das <code>arrow functions</code>, podemos retornar o
+              valor diretamente, sem precisar escrever uma instrução de retorno.
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -283,10 +302,13 @@ export default function TipsJavascriptOptimization() {
                 `}
               </Highlight>
             </pre>
-            <h2>12.  Formato breve para condicional de busca</h2>
-            <p>Se tivermos que verificar o tipo e, com base no tipo, precisamos chamar métodos diferentes,
-               temos a opção de usar vários <code><b>else if</b></code> ou usar o <code><b>switch</b></code>. 
-               Mas há uma forma abreviada que também pode ser utilizada.</p>
+            <h2>12. Formato breve para condicional de busca</h2>
+            <p>
+              Se tivermos que verificar o tipo e, com base no tipo, precisamos
+              chamar métodos diferentes, temos a opção de usar vários{' '}
+              <code>else if</code> ou usar o <code>switch</code>. Mas há uma
+              forma abreviada que também pode ser utilizada.
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -320,7 +342,9 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>13. Object.entries()</h2>
-            <p>Esse recurso ajuda a converter o objeto em um array de objetos.</p>
+            <p>
+              Esse recurso ajuda a converter o objeto em um array de objetos.
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -337,8 +361,11 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>14. Object.values ()</h2>
-            <p>Este também é um novo recurso introduzido no ES8 que executa uma função semelhante
-               a Object.entries (), mas sem a parte das chaves, retornando apenas o valor:</p>
+            <p>
+              Este também é um novo recurso introduzido no ES8 que executa uma
+              função semelhante a Object.entries (), mas sem a parte das chaves,
+              retornando apenas o valor:
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -351,7 +378,10 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>15. Repita uma string várias vezes</h2>
-            <p>Para repetir os mesmos caracteres várias vezes, podemos usar o laço for e adicioná-los ao mesmo laço, mas há um atalho para isso:</p>
+            <p>
+              Para repetir os mesmos caracteres várias vezes, podemos usar o
+              laço for e adicioná-los ao mesmo laço, mas há um atalho para isso:
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -381,7 +411,11 @@ export default function TipsJavascriptOptimization() {
               </Highlight>
             </pre>
             <h2>17. Separadores numéricos</h2>
-            <p>Agora você pode separar facilmente os números com apenas um _. Isso facilitará a vida dos desenvolvedores que trabalham com grandes números.</p>
+            <p>
+              Agora você pode separar facilmente os números com apenas um _.
+              Isso facilitará a vida dos desenvolvedores que trabalham com
+              grandes números.
+            </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">
                 {`
@@ -393,31 +427,43 @@ export default function TipsJavascriptOptimization() {
                 `}
               </Highlight>
             </pre>
-            <h2>Para se atualizar com os recursos mais recentes da mais nova versão do JavaScript (ES2021 / ES12):</h2>
+            <h2>
+              Para se atualizar com os recursos mais recentes da mais nova
+              versão do JavaScript (ES2021 / ES12):
+            </h2>
             <ol>
-              <li> 
-                <b>replaceAll ()</b>: retorna uma nova string com todos os resultados de um padrão substituídos pelo novo padrão.
+              <li>
+                <b>replaceAll ()</b>: retorna uma nova string com todos os
+                resultados de um padrão substituídos pelo novo padrão.
               </li>
               <li>
-                <b>Promise.any ()</b>: Percorre um iterável de objetos Promise e, conforme uma promessa é respondida com sucesso, retorna apenas essa única promessa com o valor.
+                <b>Promise.any ()</b>: Percorre um iterável de objetos Promise
+                e, conforme uma promessa é respondida com sucesso, retorna
+                apenas essa única promessa com o valor.
               </li>
               <li>
-                <b>weakref</b>: Este objeto contém uma referência fraca para outro objeto sem impedir que esse objeto seja coletado como lixo.
+                <b>weakref</b>: Este objeto contém uma referência fraca para
+                outro objeto sem impedir que esse objeto seja coletado como
+                lixo.
               </li>
               <li>
-                <b>FinalizationRegistry</b>: Permite solicitar um retorno de chamada quando um objeto é coletado como lixo.
+                <b>FinalizationRegistry</b>: Permite solicitar um retorno de
+                chamada quando um objeto é coletado como lixo.
               </li>
               <li>
-                <b>Visibilidade privada</b>: modificador para métodos e accessors. Métodos privados podem ser declarados com #.
+                <b>Visibilidade privada</b>: modificador para métodos e
+                accessors. Métodos privados podem ser declarados com #.
               </li>
               <li>
-                <b>Operadores lógicos</b>:  && e ||
+                <b>Operadores lógicos</b>: && e ||
               </li>
               <li>
-                <b>Intl.ListFormat</b>: Este objeto permite a formatação de listas sensíveis ao idioma.
+                <b>Intl.ListFormat</b>: Este objeto permite a formatação de
+                listas sensíveis ao idioma.
               </li>
               <li>
-                <b>Intl.DateTimeFormat</b>: Este objeto permite a formatação de data e hora sensível ao idioma.
+                <b>Intl.DateTimeFormat</b>: Este objeto permite a formatação de
+                data e hora sensível ao idioma.
               </li>
             </ol>
           </article>
