@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "./node_modules/.bin/eslint src --max-warnings=0",
+    "lint": "./node_modules/.bin/eslint ./pages/posts/* --max-warnings=0",
     "test": "jest",
     "test:watch": "yarn test --watchAll",
     "predeploy": "npm run build",
@@ -45,12 +45,7 @@
     "jest-styled-components": "^7.0.3",
     "lint-staged": "^10.5.1",
     "prettier": "2.1.2",
-    "typescript": "^4.2.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "typescript": "^4.2.0"
   },
   "lint-staged": {
     "src/**/*": [
