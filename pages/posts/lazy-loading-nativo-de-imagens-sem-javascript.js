@@ -63,9 +63,10 @@ export default function NativeLazyLoading() {
               O lazy-loading é uma técnica que adia o carregamento de recursos
               não-críticos no momento do carregamento da página. Em vez disso,
               esses recursos não-críticos são carregados no momento em que forem
-              necessários. No que diz respeito às imagens, &quot;não crítico&quot; costuma
-              ser sinônimo de &quot;fora da tela&quot;. fonte: web.dev/lazy-loading
-              escrito por Jeremy Wagner e Rachel Andrew
+              necessários. No que diz respeito às imagens, &quot;não
+              crítico&quot; costuma ser sinônimo de &quot;fora da tela&quot;.
+              fonte: web.dev/lazy-loading escrito por Jeremy Wagner e Rachel
+              Andrew
             </blockquote>
             <p>
               Isso significa que, usando o lazy-loading, alcançamos os seguintes
@@ -146,7 +147,8 @@ export default function NativeLazyLoading() {
             <p>
               Então, como é essa nova forma de <code>lazy-loading?</code> Não se
               preocupe, é bastante simples. Você apenas tem que adicionar{' '}
-              <code>"loading = &quot;lazy"</code> à sua tag de imagem e pronto.
+              <code>&quot;loading = &quot;lazy&quot;</code> à sua tag de imagem{' '}
+              e pronto.
             </p>
             <pre className={styles.pre}>
               <Highlight language="javascript">

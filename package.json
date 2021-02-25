@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "./node_modules/.bin/eslint ./pages/posts/* --max-warnings=0",
+    "lint": "./node_modules/.bin/eslint . --max-warnings=0",
     "test": "jest",
     "test:watch": "yarn test --watchAll",
     "predeploy": "npm run build",

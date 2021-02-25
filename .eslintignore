@@ -1,0 +1,3 @@
+/node_modules/*
+/public/workbox-*.js
+/public/sw.js
