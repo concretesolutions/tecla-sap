@@ -22,4 +22,4 @@ Next.JS (10.0.5) e React (17.0.1)
 
 ## Licensing
 
-Este projeto está sob a licença GMU, mais informações no arquivo LICENSE.
+Este projeto está sob a licença GNU, mais informações no arquivo LICENSE.
