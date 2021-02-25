@@ -14,7 +14,7 @@
     "deploy": "gh-pages -b main -d build"
   },
   "dependencies": {
-    "next": "10.0.5",
+    "next": "10.0.7",
     "next-pwa": "^3.1.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
