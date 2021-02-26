@@ -1,0 +1,27 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Install and Build 🔧 
+        uses: actions/setup-node@v1
+      - name: Install yarn...
+        run: npm install yarn
+      - name: Installing dependencies...
+        run: yarn install
+      - name: Build Project...
+        run: yarn build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages
+          folder: public
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
