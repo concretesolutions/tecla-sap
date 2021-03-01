@@ -44,6 +44,15 @@ export default function Home() {
                 Lazy-loading nativo de imagens (sem Javascript)
               </a>
             </Link>
+            <Link href="/posts/compreendendo-o-conceito-de-memoization-em-3-minutos">
+              <a
+                className={styles.card}
+                title="Compreendendo o conceito de Memoization (ou memoização) em 3 minutos"
+              >
+                Compreendendo o conceito de Memoization (ou memoização) em 3
+                minutos
+              </a>
+            </Link>
           </div>
         </main>
         <footer className={styles.footer}>Tecla SAP - 2021</footer>
