@@ -1,0 +1,44 @@
+@use './colors' as *;
+
+@mixin sidebar-template($direction) {
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: transform 0.2s ease-in;
+
+  // Se for usado como @include sidebar-template(top)
+  @if $direction == top {
+    width: 16px;
+    height: 100%;
+    bottom: -16px;
+    background-image: linear-gradient(
+      to top,
+      $lilac 50%,
+      $blue 
+    );
+
+    transform-origin: bottom;
+    transform: scaleY(.2);
+
+  // Se for usado como @include sidebar-template(bottom)
+  } @else if $direction == bottom {
+    width: 50%;
+    height: 16px;
+    bottom: -16px;
+    background-image: linear-gradient(
+      90deg,
+      #543DC9 50%,
+      #4E7CFC 
+    );
+
+    transform-origin: left;
+    transform: scaleX(.15);
+  }
+}
+
+@mixin touch-support($width: 320px) {
+  // Se for maior que largura $width e tiver suporte a hover
+  @media (min-width: $width) and (hover: hover) {
+    @content;
+  }
+}
