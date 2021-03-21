@@ -1,0 +1,49 @@
+@use '../base' as *;
+
+.card {
+  display: grid;
+  gap: 2ch;
+  width: clamp(310px, 90%, 600px);
+  padding: 0 0 1ch 3ch;
+
+  position: relative;
+
+  color: $black;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+
+  cursor: pointer;
+
+  @media (max-width: 420px) {
+    padding: 0 0 1ch 1ch;
+  }
+
+  &__link {
+    transition: color 0.3s ease-in;
+    &:hover {
+      color: $lilac;
+    }
+  }
+
+  &:hover {
+    /* Ao fazer o hover sobre o elemento as bordas irão reagir
+    mas só se não houver configuração de reduced motion*/
+    @media (prefers-reduced-motion: no-preference) {
+      &::before {
+        transform: scaleY(1);
+      }
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+  /* Estilos da borda não aparecerão em dispositivos de toque*/
+  @include touch-support() {
+    &::after {
+      @include sidebar-template(bottom);
+    }
+    &::before {
+      @include sidebar-template(top);
+    }
+  }
+}
