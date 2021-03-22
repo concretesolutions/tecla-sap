@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import PostContainer from '../components/PostContainer'
-import MainFooter from '../components/MainFooter/MainFooter'
+import MainFooter from '../components/MainFooter'
 import LandingLayout from '../components/LandingLayout'
 import MainHeader from '../components/MainHeader'
 
