@@ -6,11 +6,15 @@ function PostTemplate(props) {
     <Link href={props.link}>
       <li className="card">
         <h2 className="card_title">
-          <a className="card__link" href={props.link} title={props.title}>
+          <a
+            className="card__link heading-2"
+            href={props.link}
+            title={props.title}
+          >
             {props.title}
           </a>
         </h2>
-        <p className="card__desc">{props.description}</p>
+        <p className="card__desc text">{props.description}</p>
       </li>
     </Link>
   )
