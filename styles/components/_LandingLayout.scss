@@ -1,0 +1,15 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  inline-size: 100%;
+  min-block-size: 100vh;
+  gap: 20px;
+
+  // Melhoria contínua, as propriedades acima não tem suporte > 95%
+  @supports not ((inline-size: test) or (min-block-size: test)) {
+    width: 100%;
+    min-height: 100vh;
+  }
+}

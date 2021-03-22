@@ -1,12 +1,14 @@
 @use './colors' as *;
+@use './fonts' as *;
 
-@mixin sidebar-template($direction) {
+// Mixin da animação lateral dos posts
+@mixin post-animation-template($direction) {
   content: '';
   position: absolute;
   left: 0;
   transition: transform 0.2s ease-in;
 
-  // Se for usado como @include sidebar-template(top)
+  // Se for usado como @include post-animation-template(top)
   @if $direction == top {
     width: 16px;
     height: 100%;
@@ -20,7 +22,7 @@
     transform-origin: bottom;
     transform: scaleY(.2);
 
-  // Se for usado como @include sidebar-template(bottom)
+  // Se for usado como @include post-animation-template(bottom)
   } @else if $direction == bottom {
     width: 50%;
     height: 16px;
@@ -36,9 +38,30 @@
   }
 }
 
-@mixin touch-support($width: 320px) {
+// Mixin que identifica telas com suporte p/ hover > que tamanho x
+@mixin touch-support($width: 460px) {
   // Se for maior que largura $width e tiver suporte a hover
   @media (min-width: $width) and (hover: hover) {
     @content;
   }
 }
+
+// Pega um mapa de fontes e retorna em forma de propriedades css
+@mixin font-generator($font-name) {
+  $font: map-get($font-map, $font-name);
+  @if $font == null {
+    @error "Fonte #{$font-name} não disponível";
+  }
+  $family: nth($font, 1);
+  $size: nth($font, 2);
+  $weight: nth($font, 3);
+
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+  }
+  line-height: 1.4;
+}
+
+

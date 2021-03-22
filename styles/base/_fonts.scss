@@ -1,0 +1,36 @@
+$main-font: "Inter", sans-serif;
+
+
+$font-map: (
+  "heading-1": (
+    $main-font,
+    2.9rem,
+    bold
+  ),
+  "heading-2": (
+    $main-font,
+    1.8rem,
+    bold
+  ),
+  "subheading": (
+    $main-font,
+    1.375rem,
+    200
+  ),
+  "title": (
+    $main-font,
+    1.05rem,
+    bold
+  ),
+  "text": (
+    $main-font,
+    1rem,
+    200
+  ),
+  "text-small": (
+    $main-font,
+    0.75rem,
+    200
+  )
+);
+

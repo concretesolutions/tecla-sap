@@ -1,0 +1,8 @@
+@use '../base' as *;
+
+// Pega cada fonte no mapa de fontes e cria uma classe utilitária com essa fonte, para ver todos os itens da classe basta ir no mapa de base/fonts
+@each $font in map-keys($font-map) {
+  .#{unquote($font)} {
+    @include font-generator($font);
+  }
+}

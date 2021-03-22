@@ -8,10 +8,6 @@
 
   position: relative;
 
-  color: $black;
-  font-family: 'Inter', sans-serif;
-  line-height: 1.4;
-
   cursor: pointer;
 
   @media (max-width: 420px) {
@@ -40,10 +36,25 @@
   /* Estilos da borda não aparecerão em dispositivos de toque*/
   @include touch-support() {
     &::after {
-      @include sidebar-template(bottom);
+      @include post-animation-template(bottom);
     }
     &::before {
-      @include sidebar-template(top);
+      @include post-animation-template(top);
+    }
+  }
+  @media (max-width: 460px) {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      transform: translateX(-10px);
+
+      height: 100%;
+      width: 10px;
+
+      background-image: linear-gradient(to top, #543dc9 50%, #4e7cfc);
     }
   }
 }

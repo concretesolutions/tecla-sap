@@ -1,0 +1,24 @@
+@use '../base/' as *;
+
+.header {
+  display: grid;
+  place-items: center;
+  gap: 1ch 0;
+  
+  height: clamp(210px, 60%, 320px);
+  padding-block: 2ch;
+
+  @supports not(padding-block: 2ch) {
+    padding: 2ch 0;
+  }
+
+  // background: $lilac;
+
+  text-align: center;
+  &__logo {
+    object-fit: contain;
+  }
+  &__title {
+    color: $lilac;
+  }
+}

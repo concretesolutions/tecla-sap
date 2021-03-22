@@ -1,0 +1,38 @@
+@use '../base/' as *;
+
+#Path_26 {
+  stroke-dasharray: 1250;
+  stroke-dashoffset: 0;
+  animation: animate-stroke 1s forwards ease-in 1.2s;
+}
+
+#Path_27 {
+  stroke-dasharray: 1250;
+  stroke-dashoffset: 0;
+  animation: animate-stroke 1s forwards ease-in 1s;
+}
+
+:is(#Path_26, #Path_27):hover {
+  animation: animate-stroke 1s forwards ease-in 1s;
+}
+
+
+#TECLA_SAP {
+  text-transform: uppercase;
+}
+
+@keyframes animate-stroke {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1250;
+  }
+  80% {
+    stroke-dashoffset: 2500;
+  }
+  100% {
+    stroke-dashoffset: 2500;
+  }
+  
+}

@@ -1,4 +1,11 @@
-$black: #1a1a1a;
-$white: #ffffff;
-$lilac: #543DC9;
-$blue: #4E7CFC;
+$black: #1a1a1a !default;
+$white: #ffffff !default;
+$lilac: #543DC9 !default;
+$blue: #4E7CFC !default;
+$green: #B9F2E7 !default;
+
+$color-map:
+  "white" $white,
+  "black" $black;
+
+body { color: $black; }
